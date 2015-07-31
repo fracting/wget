@@ -28,4 +28,4 @@ script:
   - pkgbuild_repo=https://github.com/Alexpux/MSYS2-packages/trunk/wget
   - svn co ${pkgbuild_repo} ${srcdir}
   - msys2-prepare
-  - bash -x msys2-wrapper "cd ${srcdir} && makepkg -s --noconfirm --noprogressbar --skippgpcheck -f"
+  - bash -x msys2-wrapper "cd ${srcdir} && makepkg -s -f --noconfirm --noprogressbar --skippgpcheck"
