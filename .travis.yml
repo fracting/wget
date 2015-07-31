@@ -29,5 +29,4 @@ script:
   - svn co ${pkgbuild_repo} ${srcdir}
   - cp ${srcdir}/* ~
   - msys2-prepare
-  - bash -x msys2-wrapper "makepkg -s -f --noconfirm --noprogressbar --skippgpcheck"
   - bash -x msys2-wrapper "cd . && makepkg -s -f --noconfirm --noprogressbar --skippgpcheck"
